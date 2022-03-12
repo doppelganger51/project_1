@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class project_1 {
     public static void main(String[] args) {
- //int[] array = new int[10];
- Random rnd = new Random();
- String dzialanie = "0";
+        int [][] array = new int[9][9];
+ //int[] array = new int[100];
+ //Random rnd = new Random();
+ /*
+    String dzialanie = "0";
 
         while (true) {
             System.out.println("Randomowe liczby od 0-10. Wpisz liczbę od 0 do 10. Jeśli chcesz wyjść wpisz (x)");
@@ -16,7 +18,6 @@ public class project_1 {
             if (dzialanie.equals("x")) {
                 break;
             }
-
             int liczba = rnd.nextInt(0, 10);
             System.out.println("Moja liczba to: " + String.valueOf(liczba) + ", twoja liczba to: " + dzialanie);
             if (liczba != Integer.parseInt(dzialanie)) {
@@ -26,19 +27,14 @@ public class project_1 {
                 System.out.println("Gratyluję, wygrałeś!");
             }
         }
-
-
-
-
-
-
-
-
-
-
-        //for (int i = 1; i < array.length; i++) {
- //array[i]= rnd.nextInt(10,100);
- //System.out.print(array[i] + " ");
+  */
+    for (int i = 0; i < array.length; i++) {
+        for (int j = 0; j < array[i].length; j++){
+            array[i][j] = i+10;
+            System.out.print((array[i] [j])+"|");
+        }
+        System.out.println();
+    }
 
 
 
