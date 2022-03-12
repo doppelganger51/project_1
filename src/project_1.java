@@ -4,24 +4,54 @@ import java.util.Scanner;
 
 public class project_1 {
     public static void main(String[] args) {
-/* int[] array = new int[10];
+ //int[] array = new int[10];
  Random rnd = new Random();
+ String dzialanie = "0";
 
- for (int i = 1; i < array.length; i++) {
-     array[i]= rnd.nextInt(10,100);
-     System.out.print(array[i] + " ");
+        while (true) {
+            System.out.println("Randomowe liczby od 0-10. Wpisz liczbę od 0 do 10. Jeśli chcesz wyjść wpisz (x)");
+            System.out.println("Podaj liczbe");
+            Scanner sc = new Scanner(System.in);
+            dzialanie = sc.next();
+            if (dzialanie.equals("x")) {
+                break;
+            }
+
+            int liczba = rnd.nextInt(0, 10);
+            System.out.println("Moja liczba to: " + String.valueOf(liczba) + ", twoja liczba to: " + dzialanie);
+            if (liczba != Integer.parseInt(dzialanie)) {
+                System.out.println("Przegrałeś");
+            }
+            if (liczba == Integer.parseInt(dzialanie)) {
+                System.out.println("Gratyluję, wygrałeś!");
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+        //for (int i = 1; i < array.length; i++) {
+ //array[i]= rnd.nextInt(10,100);
+ //System.out.print(array[i] + " ");
+
+
+
+/*
+int a = 10;
+int b =100;
+System.out.println(sum(a,b));
+}
+public static int sum (int a, int b){
+return a+b;
 */
 
-
-    /*
-        int a = 10;
-        int b =100;
-        System.out.println(sum(a,b));
-    }
-        public static int sum (int a, int b){
-        return a+b;
-     */
-
+        /*
         //Tworzymy obiekt Scanner
         Scanner sc = new Scanner(System.in);
         //Deklarujemy zmienną string aby jej później używać
@@ -43,7 +73,7 @@ public class project_1 {
 
             System.out.println("Input next digit");
             int druga_liczba = sc.nextInt();
-/*
+
             if (dzialanie.equals("+")) {
                 add(pierwsza_liczba, druga_liczba);
             }
@@ -56,8 +86,8 @@ public class project_1 {
             if (dzialanie.equals("/")) {
                 div(pierwsza_liczba, druga_liczba);
             }
-
- */
+*/
+/*
             switch (dzialanie) {
                 case "+":
                     add(pierwsza_liczba, druga_liczba);
@@ -76,7 +106,8 @@ public class project_1 {
             }
             }
     }
-
+*/
+        /*
     public static void add (int A, int B){
         System.out.println(String.valueOf(A)+"+"+String.valueOf(B)+"="+(A+B));
     }
@@ -91,5 +122,7 @@ public class project_1 {
         System.out.println(String.valueOf(A)+"/"+String.valueOf(B)+"="+(A/B));
         }
                 System.out.println("Błędne dzialanie, nie wolno dzielić na zero");
+    }
+        */
     }
 }
