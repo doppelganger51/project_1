@@ -25,22 +25,29 @@ public class project_1 {
 
         Scanner sc = new Scanner(System.in);
 
-        String exit = sc.nextLine();
-        while (exit != "x"); {
+        String dzialanie = "yt";
+
+        while (dzialanie != "exit") {
             System.out.println("Input any digit");
             int pierwsza_liczba = sc.nextInt();
 
             System.out.println("Input next digit");
             int druga_liczba = sc.nextInt();
 
-            System.out.print("Input char");
-            String działanie = sc.nextLine();
+            System.out.println("Input char");
+            dzialanie = sc.next();
+            System.out.println(dzialanie);
 
-            if (działanie == "+") {
+            if (dzialanie.equals("d")) {
+                System.out.println("sdasd");
                 add(pierwsza_liczba, druga_liczba);
-            } else if (działanie == "-") {
+            }
+            if (dzialanie == "c") {
+                System.out.println("aaaaa");
                 sub(pierwsza_liczba, druga_liczba);
             }
+
+
         }
     }
 
